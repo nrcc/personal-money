@@ -1,0 +1,6 @@
+<ion-list>
+  <ion-list-header>Actions</ion-list-header>
+  <ion-item *ngFor="let item of events"
+            button
+            (click)="invoke(item)">{{item.label}}</ion-item>
+</ion-list>

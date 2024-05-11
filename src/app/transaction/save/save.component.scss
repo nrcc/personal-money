@@ -1,0 +1,35 @@
+ion-icon {
+    cursor: pointer;
+}
+
+.segment-button-checked {
+    .withdraw {
+        color: var(--ion-color-danger);
+    }
+
+    .deposit {
+        color: var(--ion-color-success);
+    }
+
+    .tranfer {
+        color: var(--ion-color-primary);
+    }
+}
+
+.cat-group {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--ion-text-color);
+}
+
+ion-label.sc-ion-label-md-h.sc-ion-label-md-s.md.label-floating.hydrated {
+    transform: translateY(50%) scale(0.75);
+}
+
+ion-label.sc-ion-label-ios-h.sc-ion-label-ios-s.ios.label-floating.hydrated {
+    transform: translateY(50%) scale(0.75);
+}
+
+.category-header {
+    font-size: small;
+}

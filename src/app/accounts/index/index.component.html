@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Accounts</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-grid class="content">
+    <app-account-list title="Active Accounts"
+                      [accounts]="activeAccounts"></app-account-list>
+
+    <app-account-list title="In-active Accounts"
+                      [accounts]="disabledAccounts"></app-account-list>
+
+    <ion-row *ngIf="activeAccounts.length <= 0 && disabledAccounts.length <= 0">
+      <ion-col>
+        <p>No records found</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-fab vertical="bottom"
+           horizontal="end"
+           slot="fixed">
+    <ion-fab-button (click)="create()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
